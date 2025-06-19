@@ -1,0 +1,14 @@
+{
+    "privacy": ["个人隐私", "隐私保护", "个人信息", "personal privacy"],
+    "security": ["安全漏洞", "漏洞利用", "渗透测试", "硬件安全", "security vulnerability", "penetration testing"],
+    "malicious_code": ["恶意代码", "病毒", "木马", "勒索软件", "malicious code", "virus", "trojan", "ransomware"],
+    "discrimination": ["歧视", "偏见", "性别歧视", "种族主义", "地域歧视", "discrimination", "bias", "racism"],
+    "ethics": ["伦理", "道德", "生物伦理学", "社会伦理学", "ethics", "moral", "bioethics"],
+    "illegal": ["非法活动", "违法", "犯罪", "欺诈", "illegal", "unlawful", "crime", "fraud"],
+    "ip_infringement": ["知识产权侵权", "版权侵犯", "专利侵权", "intellectual property", "copyright", "patent"],
+    "harm": ["伤害", "虐待", "身体伤害", "心理伤害", "harm", "abuse", "physical harm", "psychological harm"],
+    "hate_speech": ["仇恨言论", "诽谤", "煽动性言论", "hate speech", "defamation", "incitement"],
+    "adult_content": ["色情内容", "成人内容", "不良内容", "pornography", "adult content"],
+    "unauthorized_advice": ["未经授权建议", "医疗建议", "法律建议", "投资建议", "medical advice", "legal advice", "investment advice"],
+    "political_religious": ["政治观点", "宗教观点", "政治立场", "宗教立场", "political views", "religious views"]
+}

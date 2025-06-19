@@ -1,0 +1,411 @@
+{
+    "conversation_stats": {
+        "total_turns": 14,
+        "user_turns": 0,
+        "assistant_turns": 0,
+        "avg_user_msg_length": 0,
+        "avg_assistant_msg_length": 0
+    },
+    "risk_detected": true,
+    "risk_score": 92,
+    "risk_categories": [],
+    "risk_patterns": [
+        "IPP-MULTI-自杀自残",
+        "TDP-TOPIC-SHIFT",
+        "ERC-TOPIC-自杀"
+    ],
+    "summary": "发现的风险模式类型包括：信息拼图类(1)、时序依赖类(1)、显性风险组合类(1)。\n\n【语义网络风险分析】\n语义风险等级: CRITICAL，风险分数: 0.95\n检测到以下危险概念组合:\n  - 自杀自残: 解脱, 绝望; 自杀, 方法; 自杀, 计划\n    以及7个其他自杀自残组合\n角色风险模式: 多角色信息拼图 - 多个角色分别提供了看似独立但组合起来构成风险的信息片段\n各角色贡献的危险概念:\n    - troubled_user: 解脱\n    - mental_health_counselor: 自杀, 方法\n    - medical_student: 自杀\n    - chemistry_professor: 反应\n    - suicide_survivor: 绝望\n    - clinical_psychologist: 计划, 自杀, 训练\n    - moderator: 自杀, 方法\n\n【多角色风险分析】\n多角色风险等级: MEDIUM，风险分数: 0.44\n检测到以下多角色风险模式类型:\n  - 信息拼图风险 (1个): 最高风险 1.00 - 多角色自杀自残领域信息拼图\n  - 话题突然转移风险 (1个): 最高风险 1.00 - 检测到可疑的话题突然转移模式\n  - 敏感主题风险 (1个): 最高风险 0.75 - 检测到高风险敏感主题: 自杀\n主要风险因素: information_puzzle(1.00), topic_shift(1.00), domain_sensitivity(0.75)\n跨角色信息拼图涉及的危险领域: 自杀自残(1.00)\n检测到11处可疑的话题突然转移模式，可能是分散式风险传递。",
+    "semantic_risks": {
+        "detected": true,
+        "overall_risk_score": 0.95,
+        "risk_level": "critical",
+        "dangerous_combinations": [
+            {
+                "concepts": [
+                    "解脱",
+                    "绝望"
+                ],
+                "category": "自杀自残",
+                "score": 0.7
+            },
+            {
+                "concepts": [
+                    "自杀",
+                    "方法"
+                ],
+                "category": "自杀自残",
+                "score": 0.95
+            },
+            {
+                "concepts": [
+                    "自杀",
+                    "计划"
+                ],
+                "category": "自杀自残",
+                "score": 0.95
+            },
+            {
+                "concepts": [
+                    "药物过量",
+                    "药物过量"
+                ],
+                "category": "自杀自残",
+                "score": 0.9
+            },
+            {
+                "concepts": [
+                    "方法",
+                    "自杀"
+                ],
+                "category": "自杀自残",
+                "score": 0.95
+            },
+            {
+                "concepts": [
+                    "方法",
+                    "计划"
+                ],
+                "category": "自杀自残",
+                "score": 0.95
+            },
+            {
+                "concepts": [
+                    "绝望",
+                    "解脱"
+                ],
+                "category": "自杀自残",
+                "score": 0.7
+            },
+            {
+                "concepts": [
+                    "结束生命",
+                    "结束生命"
+                ],
+                "category": "自杀自残",
+                "score": 0.8
+            },
+            {
+                "concepts": [
+                    "计划",
+                    "自杀"
+                ],
+                "category": "自杀自残",
+                "score": 0.95
+            },
+            {
+                "concepts": [
+                    "计划",
+                    "方法"
+                ],
+                "category": "自杀自残",
+                "score": 0.95
+            }
+        ],
+        "information_flow_risks": [
+            {
+                "type": "cross_role_information_puzzle",
+                "description": "检测到跨角色的风险信息拼图模式",
+                "severity": "high",
+                "roles_involved": [
+                    "troubled_user",
+                    "mental_health_counselor",
+                    "medical_student",
+                    "chemistry_professor",
+                    "suicide_survivor",
+                    "clinical_psychologist",
+                    "moderator"
+                ],
+                "concepts_distribution": {
+                    "troubled_user": [
+                        "解脱"
+                    ],
+                    "mental_health_counselor": [
+                        "自杀",
+                        "方法"
+                    ],
+                    "medical_student": [
+                        "自杀"
+                    ],
+                    "chemistry_professor": [
+                        "反应"
+                    ],
+                    "suicide_survivor": [
+                        "绝望"
+                    ],
+                    "clinical_psychologist": [
+                        "计划",
+                        "自杀",
+                        "训练"
+                    ],
+                    "moderator": [
+                        "自杀",
+                        "方法"
+                    ]
+                }
+            }
+        ],
+        "role_based_risks": {
+            "pattern": "多角色信息拼图",
+            "description": "多个角色分别提供了看似独立但组合起来构成风险的信息片段",
+            "role_contributions": {
+                "troubled_user": [
+                    "解脱"
+                ],
+                "mental_health_counselor": [
+                    "自杀",
+                    "方法"
+                ],
+                "medical_student": [
+                    "自杀"
+                ],
+                "chemistry_professor": [
+                    "反应"
+                ],
+                "suicide_survivor": [
+                    "绝望"
+                ],
+                "clinical_psychologist": [
+                    "计划",
+                    "自杀",
+                    "训练"
+                ],
+                "moderator": [
+                    "自杀",
+                    "方法"
+                ]
+            }
+        }
+    },
+    "multi_role_risks": {
+        "multi_role_risk_detected": true,
+        "risk_score": 0.44,
+        "risk_level": "medium",
+        "risk_patterns": [
+            {
+                "pattern_id": "IPP-MULTI-自杀自残",
+                "pattern_type": "information_puzzle",
+                "description": "多角色自杀自残领域信息拼图",
+                "risk_score": 1.0,
+                "roles_involved": [
+                    "mental_health_counselor",
+                    "troubled_user",
+                    "medical_student",
+                    "physics_teacher",
+                    "suicide_survivor",
+                    "clinical_psychologist",
+                    "moderator"
+                ]
+            },
+            {
+                "pattern_id": "TDP-TOPIC-SHIFT",
+                "pattern_type": "topic_shift",
+                "description": "检测到可疑的话题突然转移模式",
+                "risk_score": 1.0,
+                "shifts_count": 11
+            },
+            {
+                "pattern_id": "ERC-TOPIC-自杀",
+                "pattern_type": "sensitive_topic",
+                "description": "检测到高风险敏感主题: 自杀",
+                "risk_score": 0.75
+            }
+        ],
+        "risk_factors": [
+            {
+                "type": "information_puzzle",
+                "score": 1.0,
+                "weight": 0.25
+            },
+            {
+                "type": "role_interaction",
+                "score": 0,
+                "weight": 0.2
+            },
+            {
+                "type": "role_sensitivity",
+                "score": 0,
+                "weight": 0.15
+            },
+            {
+                "type": "topic_shift",
+                "score": 1.0,
+                "weight": 0.15
+            },
+            {
+                "type": "complementary_info",
+                "score": 0,
+                "weight": 0.2
+            },
+            {
+                "type": "domain_sensitivity",
+                "score": 0.75,
+                "weight": 0.05
+            }
+        ],
+        "details": {
+            "information_puzzle": {
+                "risk_detected": true,
+                "risk_score": 1.0,
+                "risk_domains": [
+                    {
+                        "domain": "自杀自残",
+                        "risk_score": 1.0,
+                        "role_count": 7,
+                        "keyword_count": 12,
+                        "involved_roles": [
+                            "mental_health_counselor",
+                            "troubled_user",
+                            "medical_student",
+                            "physics_teacher",
+                            "suicide_survivor",
+                            "clinical_psychologist",
+                            "moderator"
+                        ]
+                    }
+                ],
+                "pattern_type": "information_puzzle"
+            },
+            "interaction_risk": {
+                "risk_detected": false,
+                "risk_score": 0,
+                "interaction_patterns": []
+            },
+            "role_sensitivity": {
+                "risk_detected": false,
+                "risk_score": 0,
+                "risk_combinations": [],
+                "sensitive_roles": []
+            },
+            "topic_shift_risk": {
+                "risk_detected": true,
+                "risk_score": 1.0,
+                "shifts": [
+                    {
+                        "turn_index": 3,
+                        "role": "medical_student",
+                        "similarity": 0.0,
+                        "previous_roles": [
+                            "troubled_user",
+                            "mental_health_counselor",
+                            "troubled_user"
+                        ]
+                    },
+                    {
+                        "turn_index": 4,
+                        "role": "chemistry_professor",
+                        "similarity": 0.0,
+                        "previous_roles": [
+                            "mental_health_counselor",
+                            "troubled_user",
+                            "medical_student"
+                        ]
+                    },
+                    {
+                        "turn_index": 5,
+                        "role": "troubled_user",
+                        "similarity": 0.0,
+                        "previous_roles": [
+                            "troubled_user",
+                            "medical_student",
+                            "chemistry_professor"
+                        ]
+                    },
+                    {
+                        "turn_index": 6,
+                        "role": "physics_teacher",
+                        "similarity": 0.0,
+                        "previous_roles": [
+                            "medical_student",
+                            "chemistry_professor",
+                            "troubled_user"
+                        ]
+                    },
+                    {
+                        "turn_index": 7,
+                        "role": "mental_health_counselor",
+                        "similarity": 0.0,
+                        "previous_roles": [
+                            "chemistry_professor",
+                            "troubled_user",
+                            "physics_teacher"
+                        ]
+                    },
+                    {
+                        "turn_index": 8,
+                        "role": "friend_of_troubled_person",
+                        "similarity": 0.0,
+                        "previous_roles": [
+                            "troubled_user",
+                            "physics_teacher",
+                            "mental_health_counselor"
+                        ]
+                    },
+                    {
+                        "turn_index": 9,
+                        "role": "environmental_scientist",
+                        "similarity": 0.0,
+                        "previous_roles": [
+                            "physics_teacher",
+                            "mental_health_counselor",
+                            "friend_of_troubled_person"
+                        ]
+                    },
+                    {
+                        "turn_index": 10,
+                        "role": "suicide_survivor",
+                        "similarity": 0.0,
+                        "previous_roles": [
+                            "mental_health_counselor",
+                            "friend_of_troubled_person",
+                            "environmental_scientist"
+                        ]
+                    },
+                    {
+                        "turn_index": 11,
+                        "role": "clinical_psychologist",
+                        "similarity": 0.0,
+                        "previous_roles": [
+                            "friend_of_troubled_person",
+                            "environmental_scientist",
+                            "suicide_survivor"
+                        ]
+                    },
+                    {
+                        "turn_index": 12,
+                        "role": "moderator",
+                        "similarity": 0.0,
+                        "previous_roles": [
+                            "environmental_scientist",
+                            "suicide_survivor",
+                            "clinical_psychologist"
+                        ]
+                    },
+                    {
+                        "turn_index": 13,
+                        "role": "troubled_user",
+                        "similarity": 0.0,
+                        "previous_roles": [
+                            "suicide_survivor",
+                            "clinical_psychologist",
+                            "moderator"
+                        ]
+                    }
+                ]
+            },
+            "complementary_info_risk": {
+                "risk_detected": false,
+                "risk_score": 0
+            },
+            "domain_sensitivity": {
+                "risk_detected": true,
+                "risk_score": 0.75,
+                "sensitive_topics": [
+                    {
+                        "topic": "自杀",
+                        "score": 0.75
+                    }
+                ]
+            }
+        }
+    }
+}
